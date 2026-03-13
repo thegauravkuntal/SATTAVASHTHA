@@ -621,7 +621,7 @@ color:white;
 /* COMPANY OVERVIEW HERO */
 
 .overview-hero{
-background:url("./images/overview-hero.jpg") center/cover;
+background:url("/assets/images/overview-hero.jpg") center/cover;
 color:white;
 text-align:center;
 padding:120px 20px;
@@ -1162,7 +1162,7 @@ color:#555;
 
 .aero-hero{
 height:500px;
-background:url("./images/aero-hero.jpg") center/cover no-repeat;
+background:url("/assets/images/aero-hero.jpg") center/cover no-repeat;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -1458,7 +1458,7 @@ color:black;
 
 height:500px;
 
-background:url("./images/def-hero.jpg") center/cover no-repeat;
+background:url("/assets/images/def-hero.jpg") center/cover no-repeat;
 
 display:flex;
 
@@ -1645,7 +1645,7 @@ border-radius:10px;
 
 .semi-hero{
 height:500px;
-background:url("images/semi-hero.jpg") center/cover no-repeat;
+background:url("/assets/images/semi-hero.jpg") center/cover no-repeat;
 display:flex;
 align-items:center;
 padding:80px;
@@ -1770,7 +1770,7 @@ border-radius:10px;
 
 .nuclear-hero{
 height:500px;
-background:url("images/nuclear-hero.jpg") center/cover no-repeat;
+background:url("/assets/images/nuclear-hero.jpg") center/cover no-repeat;
 display:flex;
 align-items:center;
 padding:80px;
@@ -1883,7 +1883,7 @@ transform:translateY(-6px);
 
 .manufacture-hero{
 height:520px;
-background:url("images/manufacture-hero.jpg") center/cover no-repeat;
+background:url("/assets/images/manufacture-hero.jpg") center/cover no-repeat;
 display:flex;
 align-items:center;
 padding:80px;

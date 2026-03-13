@@ -1,44 +1,62 @@
-/* NAVBAR LOAD */
+const path = window.location.pathname.includes("/pages/")
+  ? "../components/"
+  : "components/";
 
-fetch("components/navbar.html")
+/* NAVBAR */
+
+fetch(path + "navbar.html")
 .then(res => res.text())
 .then(data => {
+  const nav = document.getElementById("navbar");
+  if(nav) nav.innerHTML = data;
 
-const nav = document.getElementById("navbar");
-if(nav) nav.innerHTML = data;
+  const toggle = document.getElementById("menu-toggle");
+  const navMenu = document.getElementById("nav-menu");
 
-/* HAMBURGER */
-
-const toggle = document.getElementById("menu-toggle");
-const navMenu = document.getElementById("nav-menu");
-
-if(toggle){
-toggle.addEventListener("click", () => {
-navMenu.classList.toggle("active");
-});
-}
-
+  if(toggle){
+    toggle.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+  }
 });
 
 
 /* CONTACT */
 
-fetch("components/contact.html")
+fetch(path + "contact.html")
 .then(res => res.text())
 .then(data => {
-const contact = document.getElementById("contact");
-if(contact) contact.innerHTML = data;
+  const contact = document.getElementById("contact");
+  if(contact) contact.innerHTML = data;
 });
 
 
 /* FOOTER */
 
-fetch("components/footer.html")
+fetch(path + "footer.html")
 .then(res => res.text())
 .then(data => {
-const footer = document.getElementById("footer");
-if(footer) footer.innerHTML = data;
+  const footer = document.getElementById("footer");
+  if(footer) footer.innerHTML = data;
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* HERO SLIDER */
