@@ -66,6 +66,19 @@ padding:12px 0;
 height:42px;
 cursor:pointer;
 }
+.logo-box{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo-text{
+color:#ffffff;
+font-size:16px;
+font-weight:600;
+letter-spacing:0.5px;
+white-space:nowrap;
+}
 
 /* NAV CENTER */
 
@@ -772,19 +785,78 @@ margin-bottom:15px;
 
 /* WHY CHOOSE */
 
+/* WHY CHOOSE - MODERN UI */
+
 .why-choose{
-background:#0f3f8f;
+padding:100px 8%;
+background:linear-gradient(135deg,#0f3f8f,#0a2d63);
 color:white;
-padding:80px 8%;
+text-align:center;
 }
 
 .why-choose h2{
-margin-bottom:30px;
+font-size:40px;
+margin-bottom:60px;
+letter-spacing:1px;
 }
 
-.why-choose ul{
-list-style:none;
-line-height:2;
+/* GRID */
+
+.why-container{
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:25px;
+}
+
+/* CARD */
+
+.why-card{
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(10px);
+border-radius:15px;
+padding:30px 20px;
+transition:0.4s;
+border:1px solid rgba(255,255,255,0.1);
+}
+
+.why-card:hover{
+transform:translateY(-10px) scale(1.03);
+background:rgba(255,255,255,0.15);
+}
+
+/* ICON */
+
+.why-card i{
+font-size:35px;
+margin-bottom:15px;
+color:#00ff9d;
+}
+
+/* TEXT */
+
+.why-card h3{
+font-size:18px;
+margin-bottom:10px;
+}
+
+.why-card p{
+font-size:14px;
+opacity:0.85;
+line-height:1.6;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:1024px){
+.why-container{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media (max-width:600px){
+.why-container{
+grid-template-columns:1fr;
+}
 }
 
 
@@ -2068,6 +2140,11 @@ cursor:pointer;
 
 @media (max-width:768px){
 
+
+
+
+    
+
 /* navbar layout */
 
 .nav{
@@ -2130,17 +2207,37 @@ display:none;
 grid-template-columns:1fr;
 }
 
+
+.manufacturing-container{
+grid-template-columns:1fr !important;
+gap:20px;
 }
 
+.man-card{
+width:100%;
+}
 
+}
 
+@media (max-width:768px){
 
-/* ================= SMALL MOBILE ================= */
+/* existing code upar rahega */
 
-@media (max-width:480px){
+/* LOGO MOBILE FIX */
+
+.logo-box{
+gap:6px;
+max-width:200px;
+}
 
 .logo{
-height:35px;
+height:34px;
+}
+
+.logo-text{
+font-size:11px;
+line-height:1.2;
+white-space:normal;
 }
 
 }
